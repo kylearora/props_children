@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 
 class ChildComponent extends Component {
+
   render() {
     return (
-      <div>Dumb Component receiving Props
+      <div>
         <div>
-          <input type="submit" onClick={this.props.onClick}/>
+          <button className="submitButton" type="submit" onClick={this.props.onClick}>Submit</button>
         </div>
       </div>
     );
